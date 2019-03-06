@@ -17,11 +17,32 @@
 #FFB51A
 #d0affd */-->
    
-   
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("WebsiteBackground.jpg");
+
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>  
 </head>
 
 <body>
-<div id="fb-root"></div>
+
+<div class="bg">
+<div id="fb-root" ></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -33,9 +54,9 @@
 <?php include("_includes/header.html"); ?>
 <div id="indexmaincontent">
 <div id="topheading">
-<p>Find Ad of your choice</p>
+<p>Choose your category..</p>
 </div>
-<span style="color:#ffb51a; line-height:20px; font-size:14px; font-family:'Comic Sans MS', cursive; text-align:center;" ><?php echo $msg; ?> </span>
+<span style="color:brown; line-height:20px; font-size:14px; font-family:'Comic Sans MS', cursive; text-align:center;" ><?php echo $msg; ?> </span>
 <!--<div class="ullist">
 	<ul>
 	
@@ -125,19 +146,6 @@
 <li><a href="#">Music -Theatre - Dance Classes</a></li>
 <li><a href="#">Tutoring - Private Lessons</a></li>
 
-
-    <h2>Real Estate</h2> 
-<li><a href="#">Houses - Apartements for Sale</a></li>
-<li><a href="#"> Houses - Apartements for Rent</a></li>
-<li><a href="#">Rooms for Rent - Shared</a></li>
-<li><a href="#">Housing Swap</a></li>
-<li><a href="#">Vacation Rentals</a></li>
-<li><a href="#">Parking Spots</a></li>
-<li><a href="#">Land</a></li>
-<li><a href="#">Office - Commercial Space</a></li>
-<li><a href="#">Shops for Rent - Sale</a></li>
-
-
 <h2>Sevices</h2>
 <li><a href="#">Babysitter - Nanny</a></li>
 <li><a href="#">Casting - Auditions</a></li>
@@ -155,9 +163,11 @@
 <li><a href="#">Groomes</a></li>
 
    		</ul>
-		</div>-->	
+		</div>-->
         	
-<div id="category">
+
+	
+	<div id="category">
 
 <?php echo navigation_index_1($sel_subject, $sel_page); ?>
 	
@@ -171,41 +181,20 @@
 <?php echo navigation_index_3($sel_subject, $sel_page); ?>
 	
 </div>
+
+
+
+
 	
-	</div>
-<div id="freead">
+</div>
+	<div id="freead">
 <a href="category.php">Post a Free Ad</a>
 </div>
-<div id="fb" >
-<div id="topheading">
-<p>Stay Connected</p>
-</div>
-<div id="fbfloat">
-<div style="margin:10px;" class="fb-like" data-href="https://www.facebook.com/saddamdesigns" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-<div class="g-plusone" data-size="tall"></div>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-</div>
-</div>
-
-<div id="advertisment">
-<div id="topheading">
-<p>Advertisments</p>
-</div>
-<div id="adimage">
-<!-- Start of adf.ly banner code --><a href="http://adf.ly/?id=4966774" target="_blank"><img border="0" src="https://cdn.adf.ly/images/banners/adfly.300x250.1.gif" width="198" height="180" title="AdF.ly - shorten links and earn money!" /></a>
-<!-- End of adf.ly banner code -->
-</div>
-</div>
-	
 </div>
 
 <?php include("_includes/ender.php"); ?>
+	</div>
+
 
 </body>
 
